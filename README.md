@@ -37,3 +37,9 @@ The `lftp mirror` command has the `--delete --verbose --newer-only` options enab
 bash ftp.sh <DIRNAME> up
 ```
 
+### Gulp
+There is a gulp script included that should automatically find changes within subdirectories, and try to sync them based on the subdirectory's name. 
+
+You will have to edit the `var localfolder` variable inside of the script to the full path to your workspace in order to ensure that the script finds the correct subdirectory name.
+
+
