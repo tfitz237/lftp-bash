@@ -23,12 +23,12 @@ REMOTEFOLDER='$REMOTEFOLDER'
 LOCALFOLDER='$LOCALFOLDER'
     " >> "$PREFIX-config/$DIR-config.sh"
     if [ ! -d "$DIR" ]; then
-    mkdir -p $LOCALFOLDER/$DIR
-fi
+        mkdir -p $LOCALFOLDER/$DIR
+    fi
 echo "--------------------------------------"
 else
 source "$PREFIX-config/$DIR-config.sh"
-if
+fi
 
 
 if [ "$2" = "up" ] 
