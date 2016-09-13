@@ -15,7 +15,7 @@ if [ ! -e "$PREFIX-config/$DIR-config.sh" ] ; then
     read -e -p "FTP User: " USER
     read -e -p "FTP Password: " PASS
     read -e -p "Remote Directory: " REMOTEFOLDER
-    read -e -p "Local Path: " -i "$PWD" LOCALFOLDER 
+    read -e -p "Local Path: " -i "$PWD/" LOCALFOLDER 
     echo "HOST='$HOST'
 USER='$USER'
 PASS='$PASS'
