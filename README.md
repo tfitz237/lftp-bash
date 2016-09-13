@@ -2,6 +2,11 @@
 A [LFTP](https://github.com/lavv17/lftp) bash script that helps create an easy syncing workspace environment.
 
 ### Initial setup
+This bash script is dependent on LFTP so if you do not have it installed
+```bash
+sudo apt-get install lftp
+```
+
 To create a new directory and configuration, run the bash script
 ```bash
 bash ftp.sh <DIRNAME> #DIRNAME can be a nickname to the FTP server/folder you are going to be syncing
