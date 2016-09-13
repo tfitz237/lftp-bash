@@ -1,5 +1,5 @@
 # lftp-bash
-A LFTP bash script that helps create an easy syncing workspace environment.
+A [LFTP](https://github.com/lavv17/lftp) bash script that helps create an easy syncing workspace environment.
 
 ### Initial setup
 To create a new directory and configuration, run the bash script
