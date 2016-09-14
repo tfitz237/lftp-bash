@@ -18,7 +18,7 @@ config() {
 -----------------------------"
     read -e -p "FTP Host: " -i "$HOST" HOST
     read -e -p "FTP User: " -i "$USR" USR
-    read -e -p "Remote Directory: " -i "$REMOTEFOLDER" REMOTEFOLDER
+    read -e -p "Remote Path: " -i "$REMOTEFOLDER" REMOTEFOLDER
     if [ -z $LOCALFOLDER]; then 
         LOCALFOLDER="$PWD/"
     fi
@@ -91,7 +91,7 @@ upload()
         open $HOST
         user $USR $PASS
         lcd $LOCALFOLDER 
-        mirror --reverse --delete --verbose --only-newer $DIR/$(basename $REMOTEFOLDER)/ $REMOTEFOLDER
+        mirror --reverse --delete --verbose --only-newer $DIR/$(basename $REMOTEFOLDER)/ $(dirname $REMOTEFOLDER)/
         bye
         "
     else
