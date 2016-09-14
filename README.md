@@ -46,11 +46,11 @@ Run the bash script and it will mirror the remote directory with your local dire
 
 The script runs the `lftp mirror` command with the `--delete --verbose --newer-only` options enabled, which deletes any files locally that aren't in the remote, echos what files are being transferred, and only transfers new files ignoring older ones.
 ```bash
-bash ftp.sh DIRNAME/ 
+bash ftp.sh DIR 
 # or
-bash ftp.sh DIRNAME/ -d
+bash ftp.sh DIR -d
 # or
-bash ftp.sh DIRNAME/ --download
+bash ftp.sh DIR --download
 ```
 
 ### To upload from Local -> Remote
@@ -58,32 +58,32 @@ Run the bash script with the `-u` argument and it will upload your changes from 
 
 The `lftp mirror` command has the `--verbose --newer-only` options enabled, which deletes any files remotely that aren't in your local directory, echos what files are being transferred, and only transfers new files ignoring older ones.
 ```bash
-bash ftp.sh <DIRNAME> -u
+bash ftp.sh DIR -u
 # or
-bash ftp.sh <DIRNAME> --upload
+bash ftp.sh DIR --upload
 ```
 
 #### Optional
 `--delete` after -u/--upload enables deletion of files not in sync with local files.
 ```bash
-bash ftp.sh <DIRNAME -u --delete
+bash ftp.sh DIR -u --delete
 ```
 
 ### To reconfigure an FTP Configuration
 Run the bash script with `-c` argument and it will run the configuration again
 ```bash
-bash ftp.sh <DIRNAME> -c
+bash ftp.sh DIR -c
 # or
-bash ftp.sh <DIRNAME --config
+bash ftp.sh DIR --config
 ```
 
 ### To see the help page
 ```bash
 bash ftp.sh -h
 # or
-bash ftp.sh <DIRNAME> -h
+bash ftp.sh DIR -h
 # or
-bash ftp.sh <DIRNAME --help
+bash ftp.sh DIR --help
 ```
 
 ### Gulp
