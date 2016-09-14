@@ -56,7 +56,7 @@ bash ftp.sh DIR --download
 ### To upload from Local -> Remote
 Run the bash script with the `-u` argument and it will upload your changes from the local directory to the remote directory.
 
-The `lftp mirror` command has the `--verbose --newer-only` options enabled, which deletes any files remotely that aren't in your local directory, echos what files are being transferred, and only transfers new files ignoring older ones.
+The `lftp mirror` command has the `--verbose --newer-only` options enabled which echos what files are being transferred, and only transfers new files ignoring older ones.
 ```bash
 bash ftp.sh DIR -u
 # or
