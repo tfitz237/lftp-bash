@@ -1,6 +1,8 @@
 # lftp-bash
 A [LFTP](https://github.com/lavv17/lftp) bash script that helps create an easy syncing workspace environment.
 
+This script uses LFTP's `mirror` command to provide an easy sync with an FTP directory. It syncs all folders and files in the directory and updates each other with the newest files, while ignoring older files.
+
 ```bash
 ## Usage:  ftp.sh DIR ACTION [options]
 ## DIR:    Directory Name
